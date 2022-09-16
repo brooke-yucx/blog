@@ -1,0 +1,79 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+    "settings": {
+        //Extension: Markdown All in One
+        "markdown.extension.toc.unorderedList.marker": "*",
+        "markdown.extension.list.indentationSize": "inherit",
+        "markdown.extension.preview.autoShowPreviewToSide": false,
+        "markdown.extension.toc.levels": "2..6",
+
+        //Extension: MarkdownLint
+        "markdownlint.config": {
+            "default": true,
+            "MD003": { "style": "setext_with_atx" }, //标题格式
+            "MD004": { "style" : "consistent"}, //无序列表 bullet sign
+            "MD007": { "indent": 4 },
+            "MD024": false, //文档中重复标题
+//            "MD025": false, //仅允许1个最高级标题
+            "MD028": true, //引用中有空行
+            "MD031": false, //代码块前后空行
+            "MD045": false, //图片链接必须包含描述文本（alt text）
+            "MD046": { "style": "fenced" }, //代码块格式
+            "no-hard-tabs": true, //不用tab用空格
+        },
+
+        //Extension: Paste Image
+        "pasteImage.path": "${currentFileDir}/assets/${currentFileNameWithoutExt}/",
+        "pasteImage.defaultName": "YMMDD_HHmmss",
+        "pasteImage.showFilePathConfirmInputBox": true,
+
+        //Extension: TODO Highlight
+        "todohighlight.include":[
+            "**/*.md",
+        ],
+
+        //VSCode Settings
+        "workbench.colorTheme": "Default Light+",
+        "editor.detectIndentation": false,
+        "editor.fontSize": 14,
+        "editor.tabCompletion": "onlySnippets",
+        "editor.fontFamily": "'Sarasa Mono SC', 'Inconsolata', 'Microsoft YaHei', monospaced",
+        "editor.fontLigatures": true,
+        "editor.tabSize": 4,
+        "editor.insertSpaces": true,
+        "files.autoSaveDelay": 30000,
+        "files.autoSave": "afterDelay",
+        "markdown.preview.fontSize": 13,
+        // "markdown.preview.lineHeight": 1.5,
+        "markdown.preview.openMarkdownLinks": "inEditor",
+        "editor.lineHeight": 0,
+        "markdown.editor.drop.enabled": true,
+        "editor.minimap.enabled": false,
+        "editor.minimap.autohide": false,
+    },
+
+    //extension section need to be placed under settings section [20220428]
+    "extensions": {
+        //https://code.visualstudio.com/docs/editor/extension-marketplace#_workspace-recommended-extensions
+        "recommendations": [
+            //Markdown Extension Syntax Support
+            "bierner.markdown-footnotes",
+
+            //Markdown Editing
+            "yzhang.markdown-all-in-one",
+            "mushan.vscode-paste-image",
+            "DavidAnson.vscode-markdownlint",
+            //"wayou.vscode-todo-highlight",
+
+            //Markdown Preview
+            "bierner.markdown-preview-github-styles",
+
+            //Colleborating
+            "ms-vsliveshare.vsliveshare",
+        ],
+    },
+}

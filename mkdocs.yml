@@ -1,0 +1,10 @@
+site_name: Brooke's Blog
+theme:
+    name: material
+    features:
+        - navigation.tabs
+        - navigation.tabs.sticky
+        - navigation.sections
+        - navigation.expand
+markdown_extensions:
+    - footnotes
