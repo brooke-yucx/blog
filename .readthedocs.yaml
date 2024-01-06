@@ -7,17 +7,17 @@ version: 2
 
 # Set the version of Python and other tools you might need
 build:
-  os: ubuntu-20.04
+  os: ubuntu-22.04
   tools:
-    python: "mambaforge-4.10"
+    python: "3.10"
 
 mkdocs:
   configuration: mkdocs.yml
 
-# # Optionally declare the Python requirements required to build your docs
-# python:
-#    install:
-#    - requirements: env/requirements.txt
+# Optionally declare the Python requirements required to build your docs
+python:
+  install:
+  - requirements: requirements.txt
 
-conda:
-    environment: env/conda_env.yml
+# conda:
+#   environment: conda-env.yml

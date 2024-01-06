@@ -1,10 +1,95 @@
-site_name: Brooke's Blog
+site_name: 听溪 | Brooke's Blog
 theme:
     name: material
+    custom_dir: override
+    icon:
+      # logo: material/library-outline
+      # logo: fontawesome/solid/water
+      # logo: material/waves
+      logo: material/heat-wave
+    palette:
+      # Palette toggle for automatic mode
+      - media: "(prefers-color-scheme)"
+        toggle:
+          icon: material/brightness-auto
+          name: Switch to light mode
+      # Palette toggle for light mode
+      - media: "(prefers-color-scheme: light)"
+        scheme: default
+        toggle:
+          icon: material/brightness-7
+          name: Switch to dark mode
+        primary: white
+        # accent: purple
+      # Palette toggle for dark mode
+      - media: "(prefers-color-scheme: dark)"
+        scheme: slate
+        toggle:
+          icon: material/brightness-4
+          name: Switch to system preference
+        primary: black
+        # accent: green
     features:
         - navigation.tabs
         - navigation.tabs.sticky
         - navigation.sections
         - navigation.expand
+        - search.suggest
+        - search.highlight
+        - search.share
+        - header.autohide
+        - announce.dismiss
+        - toc.integrate
+        - navigation.top
+        - content.tabs.link
+        - content.code.annotation
+        - content.code.copy
+    font:
+      # text: Noto Sans Simplified Chinese
+      text: Roboto
+      code: Roboto Mono
+    language: zh
 markdown_extensions:
-    - footnotes
+#   - admonition
+#   - codehilite:
+#       guess_lang: false
+#       linenums: false
+#   - toc:
+#       permalink: true
+  - footnotes
+#   - meta
+#   - def_list
+#   - pymdownx.arithmatex
+#       generic: true
+#   - pymdownx.betterem:
+#       smart_enable: all
+#   - pymdownx.caret
+#   - pymdownx.critic
+#   - pymdownx.details
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+#   - pymdownx.inlinehilite
+#   - pymdownx.magiclink
+#   - pymdownx.mark
+#   - pymdownx.smartsymbols
+  - pymdownx.snippets
+#   - pymdownx.superfences
+#   - pymdownx.tasklist
+#   - pymdownx.tilde
+nav:
+  - 主页: 'index.md'
+  - 关于: 'about.md'
+plugins:
+  - search
+copyright:
+  Copyright &copy; 2024 <a href="https://github.com/brooke-yucx" target="_blank" rel="noopener">Brooke Yu</a>
+repo_name: brooke-yucx/blog
+repo_url: https://github.com/brooke-yucx/blog
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/brooke-yucx
