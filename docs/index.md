@@ -1,4 +1,8 @@
-Welcome to Brooke's Blog
-========================
+---
+comments: true
+---
 
-{!README.md!}
+主页 Home
+=========
+
+目前是空的呢！😞
