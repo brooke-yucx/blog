@@ -21,8 +21,10 @@
 //            "MD025": false, //仅允许1个最高级标题
             "MD028": true, //引用中有空行
             "MD031": false, //代码块前后空行
+            "MD037": false, //*之内不能有空格
             "MD045": false, //图片链接必须包含描述文本（alt text）
             "MD046": { "style": "fenced" }, //代码块格式
+            "MD053": true, //footnote 必须被用到，true 时不要轻易 fix all supported warnings！不然它删掉所有你还没引用的 reference。
             "no-hard-tabs": true, //不用tab用空格
         },
 

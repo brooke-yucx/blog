@@ -2,11 +2,13 @@ site_name: 听溪 | Brooke's Blog
 theme:
     name: material
     custom_dir: override
+    favicon: assets/favicon.png
     icon:
       # logo: material/library-outline
       # logo: fontawesome/solid/water
       # logo: material/waves
-      logo: material/heat-wave
+      # logo: material/heat-wave
+    logo: assets/favicon.png
     palette:
       # Palette toggle for automatic mode
       - media: "(prefers-color-scheme)"
@@ -20,7 +22,7 @@ theme:
           icon: material/brightness-7
           name: Switch to dark mode
         primary: white
-        # accent: purple
+        accent: cyan
       # Palette toggle for dark mode
       - media: "(prefers-color-scheme: dark)"
         scheme: slate
@@ -28,10 +30,11 @@ theme:
           icon: material/brightness-4
           name: Switch to system preference
         primary: black
-        # accent: green
+        accent: cyan
     features:
         - navigation.tabs
         - navigation.tabs.sticky
+        - navigation.top
         - navigation.sections
         - navigation.expand
         - search.suggest
@@ -39,7 +42,8 @@ theme:
         - search.share
         - header.autohide
         - announce.dismiss
-        - toc.integrate
+        # - toc.integrate
+        - toc.follow
         - navigation.top
         - content.tabs.link
         - content.code.annotation
@@ -78,15 +82,15 @@ markdown_extensions:
 #   - pymdownx.smartsymbols
   - pymdownx.snippets
 #   - pymdownx.superfences
-#   - pymdownx.tasklist
+  - pymdownx.tasklist:
+      custom_checkbox: true
 #   - pymdownx.tilde
 nav:
   - 主页: 'index.md'
   - 关于: 'about.md'
 plugins:
   - search
-copyright:
-  Copyright &copy; 2024 <a href="https://github.com/brooke-yucx" target="_blank" rel="noopener">Brooke Yu</a>
+copyright: <p xmlns:cc="http://creativecommons.org/ns#" >This work by <span property="cc:attributionName"><a href="https://github.com/brooke-yucx" target="_blank" rel="noopener">Brooke Yu</a></span> is licensed under <a href="http://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"></a></p>
 repo_name: brooke-yucx/blog
 repo_url: https://github.com/brooke-yucx/blog
 extra:
