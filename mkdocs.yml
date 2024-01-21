@@ -86,9 +86,10 @@ markdown_extensions:
       custom_checkbox: true
 #   - pymdownx.tilde
 nav:
-  - 关于 About: 'index.md'
-  - 技术 Tech!:
+  - 关于: 'index.md'
+  - 技术:
     - AXI 协议: 'Wiki/w-EE-协议-AXI.md'
+    - 蜂窝架构: 'Wiki/w-通信-蜂窝-架构.md'
 plugins:
   - search
 copyright: <p xmlns:cc="http://creativecommons.org/ns#" >This work by <span property="cc:attributionName"><a href="https://github.com/brooke-yucx" target="_blank" rel="noopener">Brooke Yu</a></span> is licensed under <a href="http://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"></a></p>
